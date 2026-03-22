@@ -21,11 +21,11 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private BigDecimal value;
+    private BigDecimal amount;
 
     @ManyToOne
     @JoinColumn(name = "payer_id")
-    private User payer;
+    private User payer; // um usuário pode ter várias transações, mas uma transação só pode ta vinculada a um payer e um receiver
 
     @ManyToOne
     @JoinColumn(name = "receiver_id")

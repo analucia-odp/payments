@@ -6,6 +6,6 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public enum UserTypeEnum {
-    SHOPKEEPER,
-    COMMON;
+    COMMON,
+    MERCHANT
 }
